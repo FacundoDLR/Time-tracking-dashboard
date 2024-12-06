@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="user-data">
+      <img src="./images/image-jeremy.png" alt="">
+      <div class="user-data_info">
+        <p>Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
+    </div>
+    <nav>
+
+      <input type="radio" name="timeframes" id="timeChoice1" value="daily">
+      <label for="timeChoice1">Daily</label>
+
+      <input type="radio" name="timeframes" id="timeChoice2" value="weekly" checked>
+      <label for="timeChoice2">Weekly</label>
+
+      <input type="radio" name="timeframes" id="timeChoice3" value="monthly">
+      <label for="timeChoice3">Monthly</label>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <article class="card work">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Work</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">32hrs</strong> <span id="previousHrs">Last Week - 36hrs</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card play">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Play</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">10hrs</strong> <span id="previousHrs">Last Week - 8hrs</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card study">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Study</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 7hrs</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card exercise">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Exercise</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 5hrs</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card social">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Social</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">5hrs</strong> <span id="previousHrs">Last Week - 10hrs</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card selfCare">
+      <div class="card-data">
+        <div class="card-data_header">
+          <strong>Self care</strong>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </div>
+        <div class="card-data_info">
+          <strong id="currentHrs">2hrs</strong> <span id="previousHrs">Last Week - 2hrs</span>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+
+  <footer class="attribution">
+    <span>Challenge by <a href="https://www.frontendmentor.io/profile/FacundoDLR/solutions" target="_blank">Frontend
+        Mentor</a>.</span>
+    <span>Coded by <a href="https://github.com/FacundoDLR" target="_blank">FACUNDO A. DE LOS RIOS</a>.</span>
+  </footer>
+
+</body>
+
+</html>
