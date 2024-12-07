@@ -18,7 +18,7 @@ fetch('/data.json') // Load data from JSON file
     timeInputs.forEach(input => {
         input.addEventListener('change', () => {
             selectedChoice = input.id;
-            console.log(`The user has selected: ${selectedChoice}`); //daily, weekly, monthly
+            //console.log(`The user has selected: ${selectedChoice}`); //daily, weekly, monthly
             updateCards(data, selectedChoice); // We update the cards with the data and the selected time
         });
     });
