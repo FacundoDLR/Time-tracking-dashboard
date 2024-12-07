@@ -1,6 +1,6 @@
 const timeInputs = document.querySelectorAll('input[name="timeframes"]');
 const cards = document.querySelectorAll('.card');
-const data = [
+/* const data = [
     {
         "title": "Work",
         "timeframes": {
@@ -103,30 +103,42 @@ const data = [
             }
         }
     }
-];
+]; */
 
+let selectedChoice = document.querySelector('input[name="timeframes"]:checked').id;
 
-let selectedChoice = 'weekly';
-timeInputs.forEach(input => {
-    input.addEventListener('change', () => {
-        selectedChoice = input.id;
-        console.log(`The user has selected: ${selectedChoice}`); /* daily, weekly, monthly */
-        updateCards();
+fetch('/data.json').then((response) => {
+    if (!response.ok) return console.log('Oops! Something went wrong.');
+    
+    return response.json();
+}).then((data) => {
+    timeInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            selectedChoice = input.id;
+            console.log(`The user has selected: ${selectedChoice}`); //daily, weekly, monthly
+            updateCards(data, selectedChoice);
+        });
     });
+
+    // Load initial values ​​(for example, "daily")
+    const defaultTimeframe = selectedChoice;
+    updateCards(data, defaultTimeframe);
+
 });
 
-function updateCards() {
+function updateCards(data, timeframe) {
+    timeframe = selectedChoice;
+
     cards.forEach((card) => {
-        /* obteniendo datos del html */
+        //getting data from html
         const title = card.querySelector('strong').innerText;
         const currentHrs = card.querySelector('#currentHrs');
         const previousHrs = card.querySelector('#previousHrs');
-        
-        const cardData = data.find((item) => item.title === title);
-        /* console.log(cardData.timeframes) */
-        const timeframeData = cardData.timeframes[selectedChoice];
+        console.log(data)
+        const cardData = data.find((item) => item.title === title); //Cannot read properties of undefined (reading 'find')
+        const timeframeData = cardData.timeframes[timeframe];
 
-        switch (selectedChoice) {
+        switch (timeframe) {
             case 'daily':
                 currentHrs.innerText = `${timeframeData.current}hrs`;
                 previousHrs.innerText = `Yesterday - ${timeframeData.previous}hrs`;
@@ -145,11 +157,7 @@ function updateCards() {
     })
 }
 
-
-/* fetch('/data.json').then((response) => {
-    if (!response.ok) return console.log('Oops! Something went wrong.');
-
-    return response.json();
-}).then((data) => {
-    console.log(data);
-}); */
+// Initialization on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateCards(); // Refresh cards on page load
+});
