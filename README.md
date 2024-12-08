@@ -1,20 +1,14 @@
 # Frontend Mentor - Time tracking dashboard
 
-<!-- ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg) -->
+![Design preview for the Time tracking dashboard coding challenge](https://time-tracking-dashboard-omega-gilt.vercel.app//design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
-Hi stranger, sorry but I´m still working on the solution for this front-end coding challenge. In a few days a will publish it.
-<!-- Thanks for checking out this front-end coding challenge. -->
+Thanks for checking out this front-end coding challenge.
 
+## The challenge
 
-<!-- ## The challenge
-
-Your challenge is to build out this dashboard and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
+The challenge is to build out this dashboard and get it looking as close to the design as possible.
 
 Your users should be able to:
 
@@ -24,9 +18,44 @@ Your users should be able to:
 
 ### Expected behaviour
 
-- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs". -->
+- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
+
+### 📸 Screenshot
+
+**PC Screenshot (1440x900)**
+
+<img src="https://time-tracking-dashboard-omega-gilt.vercel.app/screenshots/MacBook Pro-1733681023824.jpeg" width="1280" height="auto">
+
+**TABLET scrennshot (768x1024)**
+
+<img src="https://time-tracking-dashboard-omega-gilt.vercel.app/screenshots/iPad-1733681047659.jpeg" width="768" height="auto">
+
+**MOBILE Screenshot (375x667)**
+
+<img src="https://time-tracking-dashboard-omega-gilt.vercel.app/screenshots/iPhone 6-7-8-1733681039734.jpeg" width="400" height="auto">
+
+### 📎 Links
+
+- View code URL: [Github Repo](https://github.com/FacundoDLR/Time-tracking-dashboard.git)
+- Live Site URL: [Live Demo](https://time-tracking-dashboard-omega-gilt.vercel.app/)
+
+## My process
+
+### Built with
+
+- HTML 🧱
+- Advanced CSS (Pseudo classes/elements & combinators)🎨
+- Flexbox ⚒️
+- Grid ⚒️
+- SEO 🌍
+- Mobile First 📱
+- Conventional commits (git) 📜
+- Responsive design
+- Vanilla JS
+- JSON data
+
 
 ## Author 🤩
 - GitHub - [FacundoDLR](https://github.com/FacundoDLR)
 - Frontend Mentor - [@FacundoDLR](https://www.frontendmentor.io/profile/FacundoDLR)
-# Time-tracking-dashboard
+
