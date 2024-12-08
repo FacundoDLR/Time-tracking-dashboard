@@ -256,8 +256,9 @@ svg:hover path {
     padding-block-end: 0;
   }
   .user-data {
-    min-height: 20.825rem;
+    min-height: 22.125rem;
     display: flex;
+    align-items: normal;
   }
   nav {
     height: inherit;
