@@ -54,7 +54,7 @@ header {
 .user-data,
 nav {
   min-width: 12rem;
-  height: 8.3125rem; /* 133px */
+  min-height: 8.3125rem; /* 133px */
   border-radius: var(--corner-radius);
 }
 .user-data {
@@ -66,12 +66,18 @@ nav {
 .user-data_info {
   display: flex;
   gap: 1rem;
+  padding: 0 1.5rem;
 }
 .user-data_info img {
-  width: 4.375rem; /* 70px */
+  max-width: 4.375rem; /* 70px */
   height: auto;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 3px solid white;
+  /* SHADOW */
+  --tw-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  --tw-shadow-colored: 0 0.25rem 0.25rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .user-data_infoName {
   place-content: center;
@@ -115,7 +121,7 @@ article {
 }
 /* CARDS COLOR */
 .card-color {
-  height: 8.3125rem;
+  min-height: 8.3125rem;
   border-radius: var(--corner-radius);
   margin-bottom: -5.8rem;
   position: relative;
@@ -141,8 +147,8 @@ main article:nth-child(6) .card-color {
 }
 
 .card-color figure {
-  width: 4.9375rem;
-  height: 4.9375rem;
+  min-width: 4.9375rem;
+  min-height: 4.9375rem;
   position: absolute;
   right: 1rem;
   top: -0.6rem;
@@ -159,7 +165,7 @@ main article:nth-child(6) .card-color {
 .card-data {
   position: relative;
 
-  height: 8.3125rem;
+  min-height: 8.3125rem;
   border-radius: var(--corner-radius);
   background-color: var(--Dark-blue);
   place-content: center;
@@ -213,7 +219,7 @@ svg:hover path {
 }
 
 /* TABLET VIEW */
-@media screen and (29rem < width < 48rem) {
+@media screen and (29rem < width < 60.5rem) {
   header {
     min-width: 24rem;
     place-self: center;
@@ -223,11 +229,61 @@ svg:hover path {
   }
 }
 
-/* @media  screen and (48rem < width) {
-  body{
+@media screen and (60.5rem < width) {
+  section {
+    display: grid;
+    grid-template-columns: 15.9375rem 1fr;
+    align-items: center;
+    gap: 1.875rem;
+    max-width: 69.375rem;
+    margin: 0 auto;
+  }
+  header {
+    max-width: 16rem;
+    padding-block-end: 0;
+  }
+  .user-data {
+    min-height: 20.825rem;
     display: flex;
   }
-  main{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  nav {
+    height: inherit;
   }
-} */
+  nav {
+    padding: calc(2rem + 1rem) 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -1rem;
+  }
+  .user-data_info {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2.5rem;
+  }
+  .user-data_info img {
+    width: 5rem;
+    border: 3px solid white;
+  }
+  .user-data_infoName h1 {
+    font-size: 2rem;
+    font-weight: var(--font-wgh-light);
+  }
+  main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.875rem;
+  }
+  .card-data {
+    height: auto;
+    gap: 1.5rem;
+  }
+  .card-data_info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .card-data_info strong {
+    font-size: 3.5rem;
+  }
+}

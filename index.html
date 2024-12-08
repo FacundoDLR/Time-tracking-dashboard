@@ -14,171 +14,175 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
 
-  <header>
-    <div class="user-data">
+  <section>
 
-      <div class="user-data_info">
+    <header>
+      <div class="user-data">
 
-        <img src="./images/image-jeremy.png" alt="">
+        <div class="user-data_info">
 
-        <div class="user-data_infoName">
-          <p>Report for</p>
-          <h1>Jeremy Robson</h1>
+          <img src="./images/image-jeremy.png" alt="">
+
+          <div class="user-data_infoName">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+
         </div>
 
       </div>
+      <nav>
 
-    </div>
-    <nav>
+        <input type="radio" name="timeframes" id="daily" value="daily">
+        <label for="daily">Daily</label>
 
-      <input type="radio" name="timeframes" id="daily" value="daily" checked>
-      <label for="daily">Daily</label>
+        <input type="radio" name="timeframes" id="weekly" value="weekly" checked>
+        <label for="weekly">Weekly</label>
 
-      <input type="radio" name="timeframes" id="weekly" value="weekly" >
-      <label for="weekly">Weekly</label>
+        <input type="radio" name="timeframes" id="monthly" value="monthly">
+        <label for="monthly">Monthly</label>
 
-      <input type="radio" name="timeframes" id="monthly" value="monthly" >
-      <label for="monthly">Monthly</label>
+      </nav>
 
-    </nav>
+    </header>
 
-  </header>
+    <main>
 
-  <main>
-
-    <article class="card work">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-work.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Work</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card work">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-work.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">32hrs</strong> <span id="previousHrs">Last Week - 36hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Work</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">32hrs</strong> <span id="previousHrs">Last Week - 36hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="card play">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-play.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Play</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card play">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-play.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">10hrs</strong> <span id="previousHrs">Last Week - 8hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Play</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">10hrs</strong> <span id="previousHrs">Last Week - 8hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="card study">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-study.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Study</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card study">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-study.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 7hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Study</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 7hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="card exercise">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-exercise.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Exercise</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card exercise">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-exercise.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 5hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Exercise</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">4hrs</strong> <span id="previousHrs">Last Week - 5hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="card social">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-social.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Social</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card social">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-social.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">5hrs</strong> <span id="previousHrs">Last Week - 10hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Social</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">5hrs</strong> <span id="previousHrs">Last Week - 10hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-    <article class="card selfCare">
-      <div class="card-color">
-        <figure>
-          <img src="./images/icon-self-care.svg" alt="">
-        </figure>
-      </div>
-      <div class="card-data">
-        <div class="card-data_header">
-          <strong>Self Care</strong>
-          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
-              fill="#BBC0FF" fill-rule="evenodd" />
-          </svg>
+      <article class="card selfCare">
+        <div class="card-color">
+          <figure>
+            <img src="./images/icon-self-care.svg" alt="">
+          </figure>
         </div>
-        <div class="card-data_info">
-          <strong id="currentHrs">2hrs</strong> <span id="previousHrs">Last Week - 2hrs</span>
+        <div class="card-data">
+          <div class="card-data_header">
+            <strong>Self Care</strong>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF" fill-rule="evenodd" />
+            </svg>
+          </div>
+          <div class="card-data_info">
+            <strong id="currentHrs">2hrs</strong> <span id="previousHrs">Last Week - 2hrs</span>
+          </div>
         </div>
-      </div>
-    </article>
+      </article>
 
-  </main>
+    </main>
+
+  </section>
 
 
   <footer class="attribution">
