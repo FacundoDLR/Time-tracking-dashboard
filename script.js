@@ -57,7 +57,7 @@ function updateCards(data, timeframe) {
                 previousHrs.innerText = `Last Month - ${timeframeData.previous}hrs`;
                 break;
 
-            case 'monthly':
+            case 'weekly':
                 previousHrs.innerText = `Last Week - ${timeframeData.previous}hrs`;
                 break;
         }
