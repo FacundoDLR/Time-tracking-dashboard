@@ -30,8 +30,8 @@ function updateCards(data, timeframe) {
     cards.forEach((card) => {
         //getting data from html
         const title = card.querySelector('strong').innerText;
-        const currentHrs = card.querySelector('#currentHrs');
-        const previousHrs = card.querySelector('#previousHrs');
+        const currentHrs = card.querySelector('.currentHrs');
+        const previousHrs = card.querySelector('.previousHrs');
 
         // Find the current title data
         const cardData = data.find((item) => item.title === title); //Cannot read properties of undefined (reading 'find')

@@ -243,7 +243,7 @@ svg:hover path {
   body {
     height: 100vh;
   }
-  section {
+  .main-container {
     display: grid;
     grid-template-columns: 15.9375rem 1fr;
     align-items: center;
